@@ -1,17 +1,12 @@
 import { useState } from 'react';
-import { Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton } from "@mui/material";
+import { Badge,Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton, Avatar } from "@mui/material";
+
 //Icons
-import HomeIcon from '@mui/icons-material/Home';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
-import MonitorWeightIcon from '@mui/icons-material/MonitorWeight';
-import GroupIcon from '@mui/icons-material/Group';
-import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility';
 import SettingsIcon from '@mui/icons-material/Settings';
 import HelpIcon from '@mui/icons-material/Help';
 import MenuIcon from '@mui/icons-material/Menu';
 import { SideMenuItem } from '.';
+import { Firstlistitems } from './Firstlistitems';
 
 const drawerWidth : number = 240;
 
@@ -35,17 +30,9 @@ export function SideMenu(props: Props) {
           }}>
             <Typography variant="h5" component='h1' style={{ fontWeight: 600 }}>Rowing Master</Typography>
         </div>
-           <List>
-                <SideMenuItem text={'Inicio'} icon={<HomeIcon />} />
-                <SideMenuItem text={'Mi progreso'} icon={<BarChartIcon />} />
-                <SideMenuItem text={'Rutinas'} icon={<FitnessCenterIcon />} />
-                <SideMenuItem text={'Rutinas hechas'} icon={<BookmarkAddedIcon />} />
-                <SideMenuItem text={'Mi peso'} icon={<MonitorWeightIcon />} />
-                <SideMenuItem text={'Entrenadores'} icon={<GroupIcon />} />
-                <SideMenuItem text={'Mi entrenador'} icon={<SettingsAccessibilityIcon />} />
-          </List>
+            <Firstlistitems/>
           <div style={{
-              marginTop:'330px'
+              marginTop:'20vh'
           }}>
             <List>
                 <SideMenuItem text={'Configuración'} icon={<SettingsIcon />} />
@@ -54,7 +41,13 @@ export function SideMenu(props: Props) {
           </div>
           <Divider />
           <List>
-            
+            <StyledBadge
+            overlap="circular"
+            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+            variant="dot"
+          >
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            </StyledBadge>
           </List>
     </div>
   );
