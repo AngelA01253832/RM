@@ -1,5 +1,6 @@
-import { List } from "@mui/material"
-import { SideMenuItem } from "./SideMenuItem"
+import { List, Link } from "@mui/material";
+import { SideMenuItem } from "./SideMenuItem";
+import NextLink from 'next/link';
 
 import HomeIcon from '@mui/icons-material/Home';
 import BarChartIcon from '@mui/icons-material/BarChart';
@@ -12,12 +13,36 @@ import GroupIcon from '@mui/icons-material/Group';
 export const Firstlistitems = () => {
   return (
     <List>
-        <SideMenuItem text={'Inicio'} icon={<HomeIcon />} />
-        <SideMenuItem text={'Mi progreso'} icon={<BarChartIcon />} />
-        <SideMenuItem text={'Rutinas'} icon={<FitnessCenterIcon />} />
-        <SideMenuItem text={'Rutinas hechas'} icon={<BookmarkAddedIcon />} />
-        <SideMenuItem text={'Entrenadores'} icon={<GroupIcon />} />
-        <SideMenuItem text={'Mi entrenador'} icon={<MonitorWeightIcon />} />
+      <NextLink href='/' passHref>
+        <Link>
+            <SideMenuItem text={'Inicio'} icon={<HomeIcon />} />
+        </Link>
+      </NextLink>
+      <NextLink href='/myprogress' passHref>
+        <Link>
+            <SideMenuItem text={'Mi progreso'} icon={<BarChartIcon />} />
+        </Link>
+      </NextLink>
+      <NextLink href='/workouts' passHref>
+        <Link>
+            <SideMenuItem text={'Rutinas'} icon={<FitnessCenterIcon />} />
+        </Link>
+      </NextLink>
+      <NextLink href='/doneworkouts' passHref>
+        <Link>
+            <SideMenuItem text={'Rutinas hechas'} icon={<BookmarkAddedIcon />} />
+        </Link>
+      </NextLink>
+      <NextLink href='/coaches' passHref>
+        <Link>
+            <SideMenuItem text={'Entrenadores'} icon={<GroupIcon />} />
+        </Link>
+      </NextLink>
+      <NextLink href='/mycoach' passHref>
+        <Link>
+            <SideMenuItem text={'Mi entrenador'} icon={<MonitorWeightIcon />} />
+        </Link>
+      </NextLink>      
     </List>
   )
 }

@@ -34,7 +34,7 @@ export function SideMenu(props: Props) {
         </div>
             <Firstlistitems/>
           <div style={{
-              marginTop:'30vh'
+              marginTop:'25vh'
           }}>
             <List>
                 <SideMenuItem text={'Configuración'} icon={<SettingsIcon />} />
