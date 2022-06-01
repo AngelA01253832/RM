@@ -1,7 +1,7 @@
 import { Box, Toolbar, Typography } from '@mui/material';
 import type { NextPage } from 'next';
 import { UserLayout } from '../components/layouts';
-import { LastTraining } from '../components/ui/MenuCards';
+import { LastTraining, TodayWorkout,WeightProgress } from '../components/ui/IndexCards';
 
 const drawerWidth : number = 240;
 
@@ -17,8 +17,10 @@ const Home: NextPage = () => {
         }}
       >
         <Toolbar />
-        <Typography variant='h3' component='h1'>Bienvenido usuario</Typography>
+        <Typography variant='h4' component='h1'>Bienvenido usuario</Typography>
         <LastTraining/>
+        <TodayWorkout/>
+        <WeightProgress/>
       </Box>
     </UserLayout>
   )

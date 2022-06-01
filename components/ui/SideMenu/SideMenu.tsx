@@ -1,12 +1,14 @@
 import { useState } from 'react';
-import { Badge,Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton, Avatar } from "@mui/material";
+import { Grid,Card,Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton, Avatar } from "@mui/material";
 
 //Icons
 import SettingsIcon from '@mui/icons-material/Settings';
 import HelpIcon from '@mui/icons-material/Help';
 import MenuIcon from '@mui/icons-material/Menu';
-import { SideMenuItem } from '.';
-import { Firstlistitems } from './Firstlistitems';
+import { SideMenuItem, ProfileSection, Firstlistitems } from '.';
+
+const date = Date.now();
+const toDay = new Date(date)
 
 const drawerWidth : number = 240;
 
@@ -32,7 +34,7 @@ export function SideMenu(props: Props) {
         </div>
             <Firstlistitems/>
           <div style={{
-              marginTop:'20vh'
+              marginTop:'30vh'
           }}>
             <List>
                 <SideMenuItem text={'Configuración'} icon={<SettingsIcon />} />
@@ -41,13 +43,7 @@ export function SideMenu(props: Props) {
           </div>
           <Divider />
           <List>
-            <StyledBadge
-            overlap="circular"
-            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-            variant="dot"
-          >
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-            </StyledBadge>
+              <ProfileSection/>
           </List>
     </div>
   );
@@ -72,6 +68,12 @@ export function SideMenu(props: Props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h5" component='h1' style={{ fontWeight: 600 }}>Rowing Master</Typography>
+          <div>
+            <div style={{background:'#4040F2', borderRadius:'20px'}}>
+            <Typography variant="h6" component='h1' style={{ fontWeight: 500 }}>{`Hoy(${toDay.toLocaleDateString()})`}</Typography>
+            </div>
+
+          </div>
         </Toolbar>
 
       </AppBar>
@@ -106,12 +108,7 @@ export function SideMenu(props: Props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box
-        component="main"
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
-      >
-        <Toolbar />
-      </Box>
+
     </Box>
   );
 }
