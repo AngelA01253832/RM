@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Link,Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton, Avatar } from "@mui/material";
+import { Link,Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton, Avatar, Badge } from "@mui/material";
 import NextLink from 'next/link';
 
 
 //Icons
 import SettingsIcon from '@mui/icons-material/Settings';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 import HelpIcon from '@mui/icons-material/Help';
 import MenuIcon from '@mui/icons-material/Menu';
 import { SideMenuItem, ProfileSection, Firstlistitems } from '.';
@@ -39,7 +40,7 @@ export function SideMenu(props: Props) {
               marginTop:'25vh'
           }}>
             <List>
-              <NextLink href="/settings" passhref>
+              <NextLink href="/settings">
                 <Link>
                     <SideMenuItem text={'Configuración'} icon={<SettingsIcon />} />                
                 </Link>
@@ -74,12 +75,21 @@ export function SideMenu(props: Props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h5" component='h1' style={{ fontWeight: 600 }}>Rowing Master</Typography>
-          <div>
-            <div style={{background:'#4040F2', borderRadius:'20px'}}>
-            <Typography variant="h6" component='h1' style={{ fontWeight: 500 }}>{`Hoy(${toDay.toLocaleDateString()})`}</Typography>
-            </div>
-
-          </div>
+           <Box flex={ 2 } sx={{display:'flex', justifyContent:'right'}}>
+             <Box sx={{display: {xs: 'none', sm:'block'}}}>
+                <div style={{background:'#4040F2', borderRadius:'20px', width:'150px', display:'flex', justifyContent:'center'}}>
+                  <Typography variant="h6" component='h1' style={{ fontWeight: 500 }}>{`Hoy ${toDay.toLocaleDateString()}`}</Typography>
+                  </div>
+             </Box>
+          </Box> 
+          
+          <Box>
+            <IconButton>
+              <Badge badgeContent={2} color="secondary">
+                <NotificationsIcon/>
+              </Badge>
+            </IconButton>
+          </Box>
         </Toolbar>
 
       </AppBar>
