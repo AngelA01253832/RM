@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { Grid,Card,Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton, Avatar } from "@mui/material";
+import { Link,Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton, Avatar } from "@mui/material";
+import NextLink from 'next/link';
+
 
 //Icons
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -37,7 +39,11 @@ export function SideMenu(props: Props) {
               marginTop:'25vh'
           }}>
             <List>
-                <SideMenuItem text={'Configuración'} icon={<SettingsIcon />} />
+              <NextLink href="/settings" passhref>
+                <Link>
+                    <SideMenuItem text={'Configuración'} icon={<SettingsIcon />} />                
+                </Link>
+              </NextLink>
                 <SideMenuItem text={'Ayuda'} icon={<HelpIcon />} />
             </List>
           </div>
