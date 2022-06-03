@@ -28,7 +28,7 @@ export const Firstlistitems = () => {
             <SideMenuItem text={'Rutinas'} icon={<FitnessCenterIcon />} />
         </Link>
       </NextLink>
-      <NextLink href='/doneworkouts' passHref>
+      <NextLink href='/workoutsrecord' passHref>
         <Link>
             <SideMenuItem text={'Rutinas hechas'} icon={<BookmarkAddedIcon />} />
         </Link>

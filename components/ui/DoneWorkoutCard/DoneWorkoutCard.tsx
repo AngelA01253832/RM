@@ -17,7 +17,7 @@ const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
     },
   }));
 
-export const WorkoutCard = () => {
+export const DoneWorkoutCard = () => {
   return (
     <Card sx={{ maxWidth: 245, maxHeight: 245, background:'#EAECEE',color:'black' }}>
       <CardActionArea>
@@ -37,10 +37,10 @@ export const WorkoutCard = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <NextLink href='/workout' passHref>
+        <NextLink href='/doneworkout' passHref>
           <Link>
               <ColorButton variant="contained" size="small" color="success">
-                  Ver detalles 
+                  Ver mi entrenamiento 
               </ColorButton>
           </Link>
         </NextLink>
