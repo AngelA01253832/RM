@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -37,14 +37,21 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 export function ProfileSection() {
   return (
       <div style={{display:'flex', justifyContent:'space-around'}}>
-        <StyledBadge
-            overlap="circular"
-            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-            variant="dot"
-        >
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-        </StyledBadge>
-        <Typography variant="h5" component='h1'> Usuario</Typography>
+        <Box>
+          <StyledBadge
+              overlap="circular"
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+              variant="dot"
+          >
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          </StyledBadge>
+        </Box>
+        <Box>
+          <Typography variant="h5" component='h1'> Angel Bonilla</Typography> 
+          <Typography variant="subtitle1" component='h1'> Atleta</Typography>
+        </Box>
+
+       
       </div>
     
 
