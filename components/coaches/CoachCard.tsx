@@ -2,7 +2,7 @@ import { Avatar, Box, Card, CardContent, Typography } from "@mui/material"
 
 export const CoachCard = () => {
   return (
-    <Card sx={{ display: 'flex', color:'black', background:'#EAECEE' }}>
+    <Card sx={{ display: 'flex', color:'black', background:'#FFF' }}>
         <Box sx={{textAlign:'center', marginTop:2}}>
             <Avatar
                 alt="Remy Sharp"
