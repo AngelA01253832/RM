@@ -1,4 +1,4 @@
-import { Box, Typography, Toolbar } from '@mui/material'
+import { Box, Typography, Toolbar, Grid } from '@mui/material'
 import { UserLayout } from '../../components/layouts'
 
 const drawerWidth : number = 240;
@@ -17,6 +17,12 @@ export default function Coach(){
         <Toolbar />
         <Typography variant='h4' component='h1'>Nuestros entrenadores</Typography>
       </Box>
+
+      <Grid container spacing={2} style={{
+            marginTop:'1.5vh'
+        }}>
+        
+      </Grid>
     </UserLayout>
   )
 }

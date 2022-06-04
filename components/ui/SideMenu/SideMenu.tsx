@@ -85,7 +85,7 @@ export function SideMenu(props: Props) {
           
           <Box>
             <IconButton>
-              <Badge badgeContent={2} color="secondary">
+              <Badge badgeContent={1} color="secondary">
                 <NotificationsIcon/>
               </Badge>
             </IconButton>

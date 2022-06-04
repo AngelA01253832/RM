@@ -1,6 +1,6 @@
 import { UserLayout } from '../../components/layouts';
 import { Box, Grid, Toolbar, Typography } from '@mui/material';
-import { WorkoutCard } from '../../components/ui/WorkoutCard';
+import { WorkoutCard } from '../../components/workouts/WorkoutCard';
 
 const drawerWidth : number = 240;
 

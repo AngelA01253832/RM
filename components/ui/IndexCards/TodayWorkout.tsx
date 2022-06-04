@@ -1,5 +1,5 @@
 import { Box, Card, Grid, Typography,Toolbar } from "@mui/material"
-import { WorkoutCard } from "../WorkoutCard";
+import { WorkoutCard } from "../../workouts/WorkoutCard";
 
 const drawerWidth : number = 240;
 
