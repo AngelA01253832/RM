@@ -1,5 +1,6 @@
-import { Box, Typography, Toolbar, Grid } from '@mui/material'
-import { UserLayout } from '../../components/layouts'
+import { Box, Typography, Toolbar, Grid } from '@mui/material';
+import { CoachCard } from '../../components/coaches';
+import { UserLayout } from '../../components/layouts';
 
 const drawerWidth : number = 240;
 
@@ -16,13 +17,16 @@ export default function Coach(){
       >
         <Toolbar />
         <Typography variant='h4' component='h1'>Nuestros entrenadores</Typography>
-      </Box>
 
-      <Grid container spacing={2} style={{
+        <Grid container spacing={2} style={{
             marginTop:'1.5vh'
         }}>
-        
+            <Grid item xs={12}>
+              <CoachCard/>
+            </Grid>
       </Grid>
+      
+      </Box>
     </UserLayout>
   )
 }
