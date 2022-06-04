@@ -1,5 +1,5 @@
-import { Box, Card, Grid, Typography,Toolbar } from "@mui/material"
-import WeightProgressChart from "./WeightProgressChart";
+import { Box, Card, Grid, Typography } from "@mui/material"
+import  { WeightProgressChart } from "../../chartjs";
 
 const drawerWidth : number = 240;
 const weight: number[] = [76,78,75,78,74,78,78];
