@@ -11,7 +11,7 @@ export const LastTraining = () => {
       
       <Box
         component="main"
-        sx={{ flexGrow: 1, p: 1.5, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+        sx={{ flexGrow: 1, p: 1.5, width: { sm: `calc(100% - ${drawerWidth}px)`}}}
       >
             <Typography variant='h5' component='h3'>Tu ultimo entrenamiento</Typography>        
             <Grid container spacing={2} style={{
@@ -36,7 +36,7 @@ export const LastTraining = () => {
                                 <KayakingOutlinedIcon style={{color:'#4040F2'}}/>
                             </div>
                         </div>
-                        <Typography>15 minutos</Typography>
+                        <Typography>1.2 km</Typography>
                     </Card>
                 </Grid>
                 <Grid item xs={4}>
@@ -47,7 +47,7 @@ export const LastTraining = () => {
                                 <LocalFireDepartmentOutlinedIcon style={{color:'#FF513A'}}/>
                             </div>
                         </div>
-                        <Typography>15 minutos</Typography>
+                        <Typography>198 calorias</Typography>
                     </Card>
                 </Grid>
             </Grid>  

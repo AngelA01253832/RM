@@ -24,7 +24,7 @@ export const WorkoutCard = () => {
         <CardMedia
           component="img"
           height="70"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="https://img.redbull.com/images/c_crop,w_5384,h_2692,x_0,y_383,f_auto,q_auto/c_scale,w_1200/redbullcom/2018/07/06/2dadbf08-6d2f-4d9a-9419-952d9641950c/rowing-collection"
           alt="green iguana"
         />
         <CardContent>

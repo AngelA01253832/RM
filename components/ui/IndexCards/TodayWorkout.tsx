@@ -1,8 +1,20 @@
-import { Box, Card, Grid, Typography,Toolbar } from "@mui/material"
+import { Box, Card, Grid, Typography, Button, ButtonProps } from "@mui/material"
+import { green } from "@mui/material/colors";
+import { AddWeightCard } from ".";
 import { WorkoutCard } from "../../workouts/WorkoutCard";
+import { styled } from '@mui/material/styles';
+
 
 const drawerWidth : number = 240;
-
+const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
+  marginBottom: 6, 
+  marginTop:6, 
+  color: '#FFF',
+    backgroundColor: green[500],
+    '&:hover': {
+      backgroundColor: green[700],
+    },
+  }));
 export const TodayWorkout = () => {
   return (
       <>
@@ -21,13 +33,11 @@ export const TodayWorkout = () => {
 
                 <Grid item xs={6 }>
                     <Card style={{textAlign:'center', background:'#EAECEE',color:'black'}}>
-                        <Typography variant='h6' component='h6'>Anadir peso corporal</Typography>
-                        <div style={{display:'flex', justifyContent:'center',alignItems:'center',background:'#44C13C', width:'50px', height:'50px', borderRadius:'50%',margin:' 0 auto' }}>
-                            <div style={{background:'#EAECEE', width:'40px', height:'40px', borderRadius:'50%' }}>
-
-                            </div>
-                        </div>
-                        <Typography>15 minutos</Typography>
+                        <Typography variant='h6' component='h6'>Añadir peso corporal</Typography>
+                        <AddWeightCard/>
+                        <ColorButton variant="contained" size="small" color="success">
+                             Añadir peso 
+                        </ColorButton>
                     </Card>
                 </Grid>
 

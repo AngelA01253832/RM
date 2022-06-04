@@ -13,11 +13,11 @@ const Home: NextPage = () => {
         sx={{
           flexGrow: 1,
           p: 3,
-          width: { sm: `calc(100% - ${drawerWidth}px)` }
+          width: { sm: `calc(100% - ${drawerWidth}px)`}
         }}
       >
         <Toolbar />
-        <Typography variant='h4' component='h1'>Bienvenido usuario</Typography>
+        <Typography variant='h4' component='h1'>Bienvenido Angel Bonilla</Typography>
         <LastTraining />
         <TodayWorkout />
         <WeightProgress />
