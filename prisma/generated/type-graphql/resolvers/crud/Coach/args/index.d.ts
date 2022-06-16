@@ -1,0 +1,12 @@
+export { AggregateCoachArgs } from "./AggregateCoachArgs";
+export { CreateCoachArgs } from "./CreateCoachArgs";
+export { CreateManyCoachArgs } from "./CreateManyCoachArgs";
+export { DeleteCoachArgs } from "./DeleteCoachArgs";
+export { DeleteManyCoachArgs } from "./DeleteManyCoachArgs";
+export { FindFirstCoachArgs } from "./FindFirstCoachArgs";
+export { FindManyCoachArgs } from "./FindManyCoachArgs";
+export { FindUniqueCoachArgs } from "./FindUniqueCoachArgs";
+export { GroupByCoachArgs } from "./GroupByCoachArgs";
+export { UpdateCoachArgs } from "./UpdateCoachArgs";
+export { UpdateManyCoachArgs } from "./UpdateManyCoachArgs";
+export { UpsertCoachArgs } from "./UpsertCoachArgs";

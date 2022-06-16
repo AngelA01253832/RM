@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateWeightArgs } from "./args/AggregateWeightArgs";
+import { CreateManyWeightArgs } from "./args/CreateManyWeightArgs";
+import { CreateWeightArgs } from "./args/CreateWeightArgs";
+import { DeleteManyWeightArgs } from "./args/DeleteManyWeightArgs";
+import { DeleteWeightArgs } from "./args/DeleteWeightArgs";
+import { FindFirstWeightArgs } from "./args/FindFirstWeightArgs";
+import { FindManyWeightArgs } from "./args/FindManyWeightArgs";
+import { FindUniqueWeightArgs } from "./args/FindUniqueWeightArgs";
+import { GroupByWeightArgs } from "./args/GroupByWeightArgs";
+import { UpdateManyWeightArgs } from "./args/UpdateManyWeightArgs";
+import { UpdateWeightArgs } from "./args/UpdateWeightArgs";
+import { UpsertWeightArgs } from "./args/UpsertWeightArgs";
+import { Weight } from "../../../models/Weight";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateWeight } from "../../outputs/AggregateWeight";
+import { WeightGroupBy } from "../../outputs/WeightGroupBy";
+export declare class WeightCrudResolver {
+    weight(ctx: any, info: GraphQLResolveInfo, args: FindUniqueWeightArgs): Promise<Weight | null>;
+    findFirstWeight(ctx: any, info: GraphQLResolveInfo, args: FindFirstWeightArgs): Promise<Weight | null>;
+    weights(ctx: any, info: GraphQLResolveInfo, args: FindManyWeightArgs): Promise<Weight[]>;
+    createWeight(ctx: any, info: GraphQLResolveInfo, args: CreateWeightArgs): Promise<Weight>;
+    createManyWeight(ctx: any, info: GraphQLResolveInfo, args: CreateManyWeightArgs): Promise<AffectedRowsOutput>;
+    deleteWeight(ctx: any, info: GraphQLResolveInfo, args: DeleteWeightArgs): Promise<Weight | null>;
+    updateWeight(ctx: any, info: GraphQLResolveInfo, args: UpdateWeightArgs): Promise<Weight | null>;
+    deleteManyWeight(ctx: any, info: GraphQLResolveInfo, args: DeleteManyWeightArgs): Promise<AffectedRowsOutput>;
+    updateManyWeight(ctx: any, info: GraphQLResolveInfo, args: UpdateManyWeightArgs): Promise<AffectedRowsOutput>;
+    upsertWeight(ctx: any, info: GraphQLResolveInfo, args: UpsertWeightArgs): Promise<Weight>;
+    aggregateWeight(ctx: any, info: GraphQLResolveInfo, args: AggregateWeightArgs): Promise<AggregateWeight>;
+    groupByWeight(ctx: any, info: GraphQLResolveInfo, args: GroupByWeightArgs): Promise<WeightGroupBy[]>;
+}

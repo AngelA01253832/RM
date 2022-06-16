@@ -1,0 +1,9 @@
+export { AccountRelationsResolver } from "./Account/AccountRelationsResolver";
+export { AdminRelationsResolver } from "./Admin/AdminRelationsResolver";
+export { AthleteRelationsResolver } from "./Athlete/AthleteRelationsResolver";
+export { CoachRelationsResolver } from "./Coach/CoachRelationsResolver";
+export { DoneWorkoutRelationsResolver } from "./DoneWorkout/DoneWorkoutRelationsResolver";
+export { SessionRelationsResolver } from "./Session/SessionRelationsResolver";
+export { UserRelationsResolver } from "./User/UserRelationsResolver";
+export { WeightRelationsResolver } from "./Weight/WeightRelationsResolver";
+export { WorkoutToDoRelationsResolver } from "./WorkoutToDo/WorkoutToDoRelationsResolver";

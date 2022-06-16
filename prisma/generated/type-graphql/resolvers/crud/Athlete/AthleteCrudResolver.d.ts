@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateAthleteArgs } from "./args/AggregateAthleteArgs";
+import { CreateAthleteArgs } from "./args/CreateAthleteArgs";
+import { CreateManyAthleteArgs } from "./args/CreateManyAthleteArgs";
+import { DeleteAthleteArgs } from "./args/DeleteAthleteArgs";
+import { DeleteManyAthleteArgs } from "./args/DeleteManyAthleteArgs";
+import { FindFirstAthleteArgs } from "./args/FindFirstAthleteArgs";
+import { FindManyAthleteArgs } from "./args/FindManyAthleteArgs";
+import { FindUniqueAthleteArgs } from "./args/FindUniqueAthleteArgs";
+import { GroupByAthleteArgs } from "./args/GroupByAthleteArgs";
+import { UpdateAthleteArgs } from "./args/UpdateAthleteArgs";
+import { UpdateManyAthleteArgs } from "./args/UpdateManyAthleteArgs";
+import { UpsertAthleteArgs } from "./args/UpsertAthleteArgs";
+import { Athlete } from "../../../models/Athlete";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateAthlete } from "../../outputs/AggregateAthlete";
+import { AthleteGroupBy } from "../../outputs/AthleteGroupBy";
+export declare class AthleteCrudResolver {
+    athlete(ctx: any, info: GraphQLResolveInfo, args: FindUniqueAthleteArgs): Promise<Athlete | null>;
+    findFirstAthlete(ctx: any, info: GraphQLResolveInfo, args: FindFirstAthleteArgs): Promise<Athlete | null>;
+    athletes(ctx: any, info: GraphQLResolveInfo, args: FindManyAthleteArgs): Promise<Athlete[]>;
+    createAthlete(ctx: any, info: GraphQLResolveInfo, args: CreateAthleteArgs): Promise<Athlete>;
+    createManyAthlete(ctx: any, info: GraphQLResolveInfo, args: CreateManyAthleteArgs): Promise<AffectedRowsOutput>;
+    deleteAthlete(ctx: any, info: GraphQLResolveInfo, args: DeleteAthleteArgs): Promise<Athlete | null>;
+    updateAthlete(ctx: any, info: GraphQLResolveInfo, args: UpdateAthleteArgs): Promise<Athlete | null>;
+    deleteManyAthlete(ctx: any, info: GraphQLResolveInfo, args: DeleteManyAthleteArgs): Promise<AffectedRowsOutput>;
+    updateManyAthlete(ctx: any, info: GraphQLResolveInfo, args: UpdateManyAthleteArgs): Promise<AffectedRowsOutput>;
+    upsertAthlete(ctx: any, info: GraphQLResolveInfo, args: UpsertAthleteArgs): Promise<Athlete>;
+    aggregateAthlete(ctx: any, info: GraphQLResolveInfo, args: AggregateAthleteArgs): Promise<AggregateAthlete>;
+    groupByAthlete(ctx: any, info: GraphQLResolveInfo, args: GroupByAthleteArgs): Promise<AthleteGroupBy[]>;
+}

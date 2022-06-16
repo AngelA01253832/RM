@@ -1,0 +1,10 @@
+export { AccountCrudResolver } from "./Account/AccountCrudResolver";
+export { AdminCrudResolver } from "./Admin/AdminCrudResolver";
+export { AthleteCrudResolver } from "./Athlete/AthleteCrudResolver";
+export { CoachCrudResolver } from "./Coach/CoachCrudResolver";
+export { DoneWorkoutCrudResolver } from "./DoneWorkout/DoneWorkoutCrudResolver";
+export { SessionCrudResolver } from "./Session/SessionCrudResolver";
+export { UserCrudResolver } from "./User/UserCrudResolver";
+export { VerificationTokenCrudResolver } from "./VerificationToken/VerificationTokenCrudResolver";
+export { WeightCrudResolver } from "./Weight/WeightCrudResolver";
+export { WorkoutToDoCrudResolver } from "./WorkoutToDo/WorkoutToDoCrudResolver";

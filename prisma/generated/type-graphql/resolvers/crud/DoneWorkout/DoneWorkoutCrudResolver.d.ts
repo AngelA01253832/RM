@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateDoneWorkoutArgs } from "./args/AggregateDoneWorkoutArgs";
+import { CreateDoneWorkoutArgs } from "./args/CreateDoneWorkoutArgs";
+import { CreateManyDoneWorkoutArgs } from "./args/CreateManyDoneWorkoutArgs";
+import { DeleteDoneWorkoutArgs } from "./args/DeleteDoneWorkoutArgs";
+import { DeleteManyDoneWorkoutArgs } from "./args/DeleteManyDoneWorkoutArgs";
+import { FindFirstDoneWorkoutArgs } from "./args/FindFirstDoneWorkoutArgs";
+import { FindManyDoneWorkoutArgs } from "./args/FindManyDoneWorkoutArgs";
+import { FindUniqueDoneWorkoutArgs } from "./args/FindUniqueDoneWorkoutArgs";
+import { GroupByDoneWorkoutArgs } from "./args/GroupByDoneWorkoutArgs";
+import { UpdateDoneWorkoutArgs } from "./args/UpdateDoneWorkoutArgs";
+import { UpdateManyDoneWorkoutArgs } from "./args/UpdateManyDoneWorkoutArgs";
+import { UpsertDoneWorkoutArgs } from "./args/UpsertDoneWorkoutArgs";
+import { DoneWorkout } from "../../../models/DoneWorkout";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateDoneWorkout } from "../../outputs/AggregateDoneWorkout";
+import { DoneWorkoutGroupBy } from "../../outputs/DoneWorkoutGroupBy";
+export declare class DoneWorkoutCrudResolver {
+    doneWorkout(ctx: any, info: GraphQLResolveInfo, args: FindUniqueDoneWorkoutArgs): Promise<DoneWorkout | null>;
+    findFirstDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: FindFirstDoneWorkoutArgs): Promise<DoneWorkout | null>;
+    doneWorkouts(ctx: any, info: GraphQLResolveInfo, args: FindManyDoneWorkoutArgs): Promise<DoneWorkout[]>;
+    createDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: CreateDoneWorkoutArgs): Promise<DoneWorkout>;
+    createManyDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: CreateManyDoneWorkoutArgs): Promise<AffectedRowsOutput>;
+    deleteDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: DeleteDoneWorkoutArgs): Promise<DoneWorkout | null>;
+    updateDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: UpdateDoneWorkoutArgs): Promise<DoneWorkout | null>;
+    deleteManyDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: DeleteManyDoneWorkoutArgs): Promise<AffectedRowsOutput>;
+    updateManyDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: UpdateManyDoneWorkoutArgs): Promise<AffectedRowsOutput>;
+    upsertDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: UpsertDoneWorkoutArgs): Promise<DoneWorkout>;
+    aggregateDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: AggregateDoneWorkoutArgs): Promise<AggregateDoneWorkout>;
+    groupByDoneWorkout(ctx: any, info: GraphQLResolveInfo, args: GroupByDoneWorkoutArgs): Promise<DoneWorkoutGroupBy[]>;
+}

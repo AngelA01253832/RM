@@ -1,9 +1,10 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler,} from "chart.js";
 import { Line } from "react-chartjs-2";
+import { Box, Button, ButtonGroup } from "@mui/material";
 ChartJS.register( CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
-const scores = [76,78,75,78,74,78,78];
+const scores = [76,78,75,78,74,78,77];
 const labels = [1,2,3,4,5,6,7];
 
 const options = {
@@ -16,7 +17,9 @@ const options = {
   },
 };
 
+
 export function WeightProgressChart() {
+  const [chartColor, setchartColor] = useState('75, 192, 192')
   const data = useMemo(function () {
     return {
       datasets: [
@@ -24,15 +27,30 @@ export function WeightProgressChart() {
           label: "Mis datos",
           data: scores,
           tension: 0.3,
-          borderColor: "rgb(75, 192, 192)",
+          borderColor: `rgb(${chartColor})`,
           pointRadius: 6,
-          pointBackgroundColor: "rgb(75, 192, 192)",
-          backgroundColor: "rgba(75, 192, 192, 0.3)",
+          pointBackgroundColor: `rgb(${chartColor})`,
+          backgroundColor: `rgb(${chartColor},0.3)`,
         },
       ],
       labels,
     };
   }, []);
 
-  return <Line data={data} options={options} />;
+  return(
+    <>
+    <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+    <ButtonGroup sx={{margin:'3vh auto auto'}} variant="contained" aria-label="outlined primary button group">
+          <Button onClick={() => {setchartColor('75, 192, 192');}}>Tiempo</Button>
+          <Button onClick={() => {setchartColor('75, 192, 192');}}>Distancia</Button>
+          <Button onClick={() => {setchartColor('75, 192, 192');}}>Calorias</Button>
+          <Button onClick={() => {setchartColor('75, 192, 192');}}>Mi peso</Button>
+      </ButtonGroup>
+    </Box>
+    <Box sx={{marginTop:'5vh'}}>
+      <Line data={data} options={options} />
+    </Box>
+    </>
+     
+     )
 }

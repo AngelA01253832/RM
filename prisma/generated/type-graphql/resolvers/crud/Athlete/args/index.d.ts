@@ -1,0 +1,12 @@
+export { AggregateAthleteArgs } from "./AggregateAthleteArgs";
+export { CreateAthleteArgs } from "./CreateAthleteArgs";
+export { CreateManyAthleteArgs } from "./CreateManyAthleteArgs";
+export { DeleteAthleteArgs } from "./DeleteAthleteArgs";
+export { DeleteManyAthleteArgs } from "./DeleteManyAthleteArgs";
+export { FindFirstAthleteArgs } from "./FindFirstAthleteArgs";
+export { FindManyAthleteArgs } from "./FindManyAthleteArgs";
+export { FindUniqueAthleteArgs } from "./FindUniqueAthleteArgs";
+export { GroupByAthleteArgs } from "./GroupByAthleteArgs";
+export { UpdateAthleteArgs } from "./UpdateAthleteArgs";
+export { UpdateManyAthleteArgs } from "./UpdateManyAthleteArgs";
+export { UpsertAthleteArgs } from "./UpsertAthleteArgs";

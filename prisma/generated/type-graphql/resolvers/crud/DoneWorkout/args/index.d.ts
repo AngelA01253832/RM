@@ -1,0 +1,12 @@
+export { AggregateDoneWorkoutArgs } from "./AggregateDoneWorkoutArgs";
+export { CreateDoneWorkoutArgs } from "./CreateDoneWorkoutArgs";
+export { CreateManyDoneWorkoutArgs } from "./CreateManyDoneWorkoutArgs";
+export { DeleteDoneWorkoutArgs } from "./DeleteDoneWorkoutArgs";
+export { DeleteManyDoneWorkoutArgs } from "./DeleteManyDoneWorkoutArgs";
+export { FindFirstDoneWorkoutArgs } from "./FindFirstDoneWorkoutArgs";
+export { FindManyDoneWorkoutArgs } from "./FindManyDoneWorkoutArgs";
+export { FindUniqueDoneWorkoutArgs } from "./FindUniqueDoneWorkoutArgs";
+export { GroupByDoneWorkoutArgs } from "./GroupByDoneWorkoutArgs";
+export { UpdateDoneWorkoutArgs } from "./UpdateDoneWorkoutArgs";
+export { UpdateManyDoneWorkoutArgs } from "./UpdateManyDoneWorkoutArgs";
+export { UpsertDoneWorkoutArgs } from "./UpsertDoneWorkoutArgs";

@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateCoachArgs } from "./args/AggregateCoachArgs";
+import { CreateCoachArgs } from "./args/CreateCoachArgs";
+import { CreateManyCoachArgs } from "./args/CreateManyCoachArgs";
+import { DeleteCoachArgs } from "./args/DeleteCoachArgs";
+import { DeleteManyCoachArgs } from "./args/DeleteManyCoachArgs";
+import { FindFirstCoachArgs } from "./args/FindFirstCoachArgs";
+import { FindManyCoachArgs } from "./args/FindManyCoachArgs";
+import { FindUniqueCoachArgs } from "./args/FindUniqueCoachArgs";
+import { GroupByCoachArgs } from "./args/GroupByCoachArgs";
+import { UpdateCoachArgs } from "./args/UpdateCoachArgs";
+import { UpdateManyCoachArgs } from "./args/UpdateManyCoachArgs";
+import { UpsertCoachArgs } from "./args/UpsertCoachArgs";
+import { Coach } from "../../../models/Coach";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateCoach } from "../../outputs/AggregateCoach";
+import { CoachGroupBy } from "../../outputs/CoachGroupBy";
+export declare class CoachCrudResolver {
+    coach(ctx: any, info: GraphQLResolveInfo, args: FindUniqueCoachArgs): Promise<Coach | null>;
+    findFirstCoach(ctx: any, info: GraphQLResolveInfo, args: FindFirstCoachArgs): Promise<Coach | null>;
+    coaches(ctx: any, info: GraphQLResolveInfo, args: FindManyCoachArgs): Promise<Coach[]>;
+    createCoach(ctx: any, info: GraphQLResolveInfo, args: CreateCoachArgs): Promise<Coach>;
+    createManyCoach(ctx: any, info: GraphQLResolveInfo, args: CreateManyCoachArgs): Promise<AffectedRowsOutput>;
+    deleteCoach(ctx: any, info: GraphQLResolveInfo, args: DeleteCoachArgs): Promise<Coach | null>;
+    updateCoach(ctx: any, info: GraphQLResolveInfo, args: UpdateCoachArgs): Promise<Coach | null>;
+    deleteManyCoach(ctx: any, info: GraphQLResolveInfo, args: DeleteManyCoachArgs): Promise<AffectedRowsOutput>;
+    updateManyCoach(ctx: any, info: GraphQLResolveInfo, args: UpdateManyCoachArgs): Promise<AffectedRowsOutput>;
+    upsertCoach(ctx: any, info: GraphQLResolveInfo, args: UpsertCoachArgs): Promise<Coach>;
+    aggregateCoach(ctx: any, info: GraphQLResolveInfo, args: AggregateCoachArgs): Promise<AggregateCoach>;
+    groupByCoach(ctx: any, info: GraphQLResolveInfo, args: GroupByCoachArgs): Promise<CoachGroupBy[]>;
+}
