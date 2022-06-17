@@ -7,5 +7,5 @@ export declare class CoachWorkoutToDoArgs {
     cursor?: WorkoutToDoWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "date" | "goal" | "coachId" | "athleteId"> | undefined;
+    distinct?: Array<"id" | "date" | "indications" | "goal" | "goalvalue" | "coachId" | "athleteId"> | undefined;
 }

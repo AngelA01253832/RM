@@ -5,7 +5,9 @@ export declare class WorkoutToDo {
     coach?: Coach;
     athlete?: Athlete;
     date: Date;
+    indications: string;
     goal: "Tiempo" | "Calorias" | "Distancia";
+    goalvalue: number;
     coachId: string;
     athleteId: string;
 }

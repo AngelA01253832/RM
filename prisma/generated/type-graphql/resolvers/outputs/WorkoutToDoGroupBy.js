@@ -3,9 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.WorkoutToDoGroupBy = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const WorkoutToDoAvgAggregate_1 = require("../outputs/WorkoutToDoAvgAggregate");
 const WorkoutToDoCountAggregate_1 = require("../outputs/WorkoutToDoCountAggregate");
 const WorkoutToDoMaxAggregate_1 = require("../outputs/WorkoutToDoMaxAggregate");
 const WorkoutToDoMinAggregate_1 = require("../outputs/WorkoutToDoMinAggregate");
+const WorkoutToDoSumAggregate_1 = require("../outputs/WorkoutToDoSumAggregate");
 const Enum_Goal_1 = require("../../enums/Enum_Goal");
 let WorkoutToDoGroupBy = class WorkoutToDoGroupBy {
 };
@@ -22,11 +24,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Date)
 ], WorkoutToDoGroupBy.prototype, "date", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], WorkoutToDoGroupBy.prototype, "indications", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Enum_Goal_1.Enum_Goal, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)
 ], WorkoutToDoGroupBy.prototype, "goal", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Number)
+], WorkoutToDoGroupBy.prototype, "goalvalue", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: false
@@ -45,6 +59,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", WorkoutToDoCountAggregate_1.WorkoutToDoCountAggregate)
 ], WorkoutToDoGroupBy.prototype, "_count", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => WorkoutToDoAvgAggregate_1.WorkoutToDoAvgAggregate, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", WorkoutToDoAvgAggregate_1.WorkoutToDoAvgAggregate)
+], WorkoutToDoGroupBy.prototype, "_avg", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => WorkoutToDoSumAggregate_1.WorkoutToDoSumAggregate, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", WorkoutToDoSumAggregate_1.WorkoutToDoSumAggregate)
+], WorkoutToDoGroupBy.prototype, "_sum", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => WorkoutToDoMinAggregate_1.WorkoutToDoMinAggregate, {
         nullable: true

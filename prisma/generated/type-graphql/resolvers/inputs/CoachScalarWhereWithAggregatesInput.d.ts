@@ -10,6 +10,8 @@ export declare class CoachScalarWhereWithAggregatesInput {
     lastname?: StringWithAggregatesFilter | undefined;
     schoolId?: StringWithAggregatesFilter | undefined;
     description?: StringWithAggregatesFilter | undefined;
+    scheduler?: StringWithAggregatesFilter | undefined;
+    KnowTrainer?: StringWithAggregatesFilter | undefined;
     gender?: EnumEnum_GenderWithAggregatesFilter | undefined;
     status?: EnumEnum_StatusWithAggregatesFilter | undefined;
     userId?: StringWithAggregatesFilter | undefined;

@@ -33,11 +33,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Date)
 ], WorkoutToDoCreateInput.prototype, "date", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], WorkoutToDoCreateInput.prototype, "indications", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Enum_Goal_1.Enum_Goal, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)
 ], WorkoutToDoCreateInput.prototype, "goal", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Number)
+], WorkoutToDoCreateInput.prototype, "goalvalue", void 0);
 WorkoutToDoCreateInput = tslib_1.__decorate([
     TypeGraphQL.InputType("WorkoutToDoCreateInput", {
         isAbstract: true

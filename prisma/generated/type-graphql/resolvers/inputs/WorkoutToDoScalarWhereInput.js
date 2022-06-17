@@ -6,6 +6,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumEnum_GoalFilter_1 = require("../inputs/EnumEnum_GoalFilter");
+const IntFilter_1 = require("../inputs/IntFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 let WorkoutToDoScalarWhereInput = WorkoutToDoScalarWhereInput_1 = class WorkoutToDoScalarWhereInput {
 };
@@ -40,11 +41,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
 ], WorkoutToDoScalarWhereInput.prototype, "date", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+], WorkoutToDoScalarWhereInput.prototype, "indications", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumEnum_GoalFilter_1.EnumEnum_GoalFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", EnumEnum_GoalFilter_1.EnumEnum_GoalFilter)
 ], WorkoutToDoScalarWhereInput.prototype, "goal", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
+], WorkoutToDoScalarWhereInput.prototype, "goalvalue", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
         nullable: true

@@ -1,0 +1,12 @@
+export { AggregateGlobalWorkoutArgs } from "./AggregateGlobalWorkoutArgs";
+export { CreateGlobalWorkoutArgs } from "./CreateGlobalWorkoutArgs";
+export { CreateManyGlobalWorkoutArgs } from "./CreateManyGlobalWorkoutArgs";
+export { DeleteGlobalWorkoutArgs } from "./DeleteGlobalWorkoutArgs";
+export { DeleteManyGlobalWorkoutArgs } from "./DeleteManyGlobalWorkoutArgs";
+export { FindFirstGlobalWorkoutArgs } from "./FindFirstGlobalWorkoutArgs";
+export { FindManyGlobalWorkoutArgs } from "./FindManyGlobalWorkoutArgs";
+export { FindUniqueGlobalWorkoutArgs } from "./FindUniqueGlobalWorkoutArgs";
+export { GroupByGlobalWorkoutArgs } from "./GroupByGlobalWorkoutArgs";
+export { UpdateGlobalWorkoutArgs } from "./UpdateGlobalWorkoutArgs";
+export { UpdateManyGlobalWorkoutArgs } from "./UpdateManyGlobalWorkoutArgs";
+export { UpsertGlobalWorkoutArgs } from "./UpsertGlobalWorkoutArgs";

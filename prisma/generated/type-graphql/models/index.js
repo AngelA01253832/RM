@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.WorkoutToDo = exports.Weight = exports.VerificationToken = exports.User = exports.Session = exports.DoneWorkout = exports.Coach = exports.Athlete = exports.Admin = exports.Account = void 0;
+exports.WorkoutToDo = exports.Weight = exports.VerificationToken = exports.User = exports.Session = exports.GlobalWorkout = exports.DoneWorkout = exports.Coach = exports.Athlete = exports.Admin = exports.Account = void 0;
 var Account_1 = require("./Account");
 Object.defineProperty(exports, "Account", { enumerable: true, get: function () { return Account_1.Account; } });
 var Admin_1 = require("./Admin");
@@ -11,6 +11,8 @@ var Coach_1 = require("./Coach");
 Object.defineProperty(exports, "Coach", { enumerable: true, get: function () { return Coach_1.Coach; } });
 var DoneWorkout_1 = require("./DoneWorkout");
 Object.defineProperty(exports, "DoneWorkout", { enumerable: true, get: function () { return DoneWorkout_1.DoneWorkout; } });
+var GlobalWorkout_1 = require("./GlobalWorkout");
+Object.defineProperty(exports, "GlobalWorkout", { enumerable: true, get: function () { return GlobalWorkout_1.GlobalWorkout; } });
 var Session_1 = require("./Session");
 Object.defineProperty(exports, "Session", { enumerable: true, get: function () { return Session_1.Session; } });
 var User_1 = require("./User");

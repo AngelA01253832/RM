@@ -27,7 +27,7 @@ export const TodayWorkout = () => {
             <Grid container spacing={2} style={{
                 marginTop:'1.5vh'
             }}>
-                <Grid item xs={6  }>
+                <Grid item xs={6 }>
                     <WorkoutCard/>
                 </Grid>
 

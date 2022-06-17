@@ -39,14 +39,6 @@ export function WeightProgressChart() {
 
   return(
     <>
-    <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-    <ButtonGroup sx={{margin:'3vh auto auto'}} variant="contained" aria-label="outlined primary button group">
-          <Button onClick={() => {setchartColor('75, 192, 192');}}>Tiempo</Button>
-          <Button onClick={() => {setchartColor('75, 192, 192');}}>Distancia</Button>
-          <Button onClick={() => {setchartColor('75, 192, 192');}}>Calorias</Button>
-          <Button onClick={() => {setchartColor('75, 192, 192');}}>Mi peso</Button>
-      </ButtonGroup>
-    </Box>
     <Box sx={{marginTop:'5vh'}}>
       <Line data={data} options={options} />
     </Box>

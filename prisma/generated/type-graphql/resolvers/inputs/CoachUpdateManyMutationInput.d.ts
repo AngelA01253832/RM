@@ -7,6 +7,8 @@ export declare class CoachUpdateManyMutationInput {
     lastname?: StringFieldUpdateOperationsInput | undefined;
     schoolId?: StringFieldUpdateOperationsInput | undefined;
     description?: StringFieldUpdateOperationsInput | undefined;
+    scheduler?: StringFieldUpdateOperationsInput | undefined;
+    KnowTrainer?: StringFieldUpdateOperationsInput | undefined;
     gender?: EnumEnum_GenderFieldUpdateOperationsInput | undefined;
     status?: EnumEnum_StatusFieldUpdateOperationsInput | undefined;
 }

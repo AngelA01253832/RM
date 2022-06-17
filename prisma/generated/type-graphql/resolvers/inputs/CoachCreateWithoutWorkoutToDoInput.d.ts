@@ -1,3 +1,4 @@
+import { GlobalWorkoutCreateNestedManyWithoutCoachInput } from "../inputs/GlobalWorkoutCreateNestedManyWithoutCoachInput";
 import { UserCreateNestedOneWithoutCoachInput } from "../inputs/UserCreateNestedOneWithoutCoachInput";
 export declare class CoachCreateWithoutWorkoutToDoInput {
     id?: string | undefined;
@@ -5,7 +6,10 @@ export declare class CoachCreateWithoutWorkoutToDoInput {
     lastname: string;
     schoolId: string;
     description: string;
+    scheduler: string;
+    KnowTrainer: string;
     gender: "Hombre" | "Mujer";
     status: "Negado" | "Autorizado";
     user: UserCreateNestedOneWithoutCoachInput;
+    GlobalWorkout?: GlobalWorkoutCreateNestedManyWithoutCoachInput | undefined;
 }

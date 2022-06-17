@@ -6,6 +6,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
 const EnumEnum_GoalWithAggregatesFilter_1 = require("../inputs/EnumEnum_GoalWithAggregatesFilter");
+const IntWithAggregatesFilter_1 = require("../inputs/IntWithAggregatesFilter");
 const StringWithAggregatesFilter_1 = require("../inputs/StringWithAggregatesFilter");
 let WorkoutToDoScalarWhereWithAggregatesInput = WorkoutToDoScalarWhereWithAggregatesInput_1 = class WorkoutToDoScalarWhereWithAggregatesInput {
 };
@@ -40,11 +41,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter)
 ], WorkoutToDoScalarWhereWithAggregatesInput.prototype, "date", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+], WorkoutToDoScalarWhereWithAggregatesInput.prototype, "indications", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumEnum_GoalWithAggregatesFilter_1.EnumEnum_GoalWithAggregatesFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", EnumEnum_GoalWithAggregatesFilter_1.EnumEnum_GoalWithAggregatesFilter)
 ], WorkoutToDoScalarWhereWithAggregatesInput.prototype, "goal", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
+], WorkoutToDoScalarWhereWithAggregatesInput.prototype, "goalvalue", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
         nullable: true

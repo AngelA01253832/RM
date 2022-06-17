@@ -11,6 +11,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Number)
 ], CoachCount.prototype, "WorkoutToDo", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Number)
+], CoachCount.prototype, "GlobalWorkout", void 0);
 CoachCount = tslib_1.__decorate([
     TypeGraphQL.ObjectType("CoachCount", {
         isAbstract: true

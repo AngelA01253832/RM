@@ -10,6 +10,8 @@ var CoachScalarFieldEnum;
     CoachScalarFieldEnum["lastname"] = "lastname";
     CoachScalarFieldEnum["schoolId"] = "schoolId";
     CoachScalarFieldEnum["description"] = "description";
+    CoachScalarFieldEnum["scheduler"] = "scheduler";
+    CoachScalarFieldEnum["KnowTrainer"] = "KnowTrainer";
     CoachScalarFieldEnum["gender"] = "gender";
     CoachScalarFieldEnum["status"] = "status";
     CoachScalarFieldEnum["userId"] = "userId";

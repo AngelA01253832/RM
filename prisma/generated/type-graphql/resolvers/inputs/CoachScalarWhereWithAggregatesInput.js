@@ -58,6 +58,18 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], CoachScalarWhereWithAggregatesInput.prototype, "description", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+], CoachScalarWhereWithAggregatesInput.prototype, "scheduler", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+], CoachScalarWhereWithAggregatesInput.prototype, "KnowTrainer", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumEnum_GenderWithAggregatesFilter_1.EnumEnum_GenderWithAggregatesFilter, {
         nullable: true
     }),

@@ -4,6 +4,8 @@ import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { Box, Typography } from '@mui/material';
+import {useSession,signIn,signOut, getSession} from "next-auth/react";
+
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -34,7 +36,15 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   },
 }));
 
-export function ProfileSection() {
+type Role = 'Atleta' | 'Deportista' | 'Entrenador';
+
+interface Props {
+  userName: string,
+  profileImg: string,
+  userRole: Role
+}
+export const ProfileSection: React.FC<Props> = ({userName, profileImg, userRole}) => {
+
   return (
       <div style={{display:'flex', justifyContent:'space-around'}}>
         <Box>
@@ -43,19 +53,23 @@ export function ProfileSection() {
               anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
               variant="dot"
           >
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt={userName} src={profileImg} />
           </StyledBadge>
         </Box>
         <Box>
-          <Typography variant="h5" component='h1'> Angel Bonilla</Typography> 
-          <Typography variant="subtitle1" component='h1'> Atleta</Typography>
+          <Typography variant="h5" component='h1'> {userName} </Typography> 
+          <Typography variant="subtitle1" component='h1'> {userRole} </Typography>
         </Box>
 
        
       </div>
-    
-
-    
-   
   );
+}
+export const getServerSideProps = async (ctx: any) => {
+  const session = await getSession(ctx)
+  return {
+      props: {
+          session:session
+      }
+  }
 }

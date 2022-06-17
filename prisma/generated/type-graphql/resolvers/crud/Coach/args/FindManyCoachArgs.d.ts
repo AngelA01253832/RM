@@ -7,5 +7,5 @@ export declare class FindManyCoachArgs {
     cursor?: CoachWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "name" | "lastname" | "schoolId" | "description" | "gender" | "status" | "userId"> | undefined;
+    distinct?: Array<"id" | "name" | "lastname" | "schoolId" | "description" | "scheduler" | "KnowTrainer" | "gender" | "status" | "userId"> | undefined;
 }

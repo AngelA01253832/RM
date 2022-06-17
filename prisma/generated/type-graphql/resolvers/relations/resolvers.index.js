@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.WorkoutToDoRelationsResolver = exports.WeightRelationsResolver = exports.UserRelationsResolver = exports.SessionRelationsResolver = exports.DoneWorkoutRelationsResolver = exports.CoachRelationsResolver = exports.AthleteRelationsResolver = exports.AdminRelationsResolver = exports.AccountRelationsResolver = void 0;
+exports.WorkoutToDoRelationsResolver = exports.WeightRelationsResolver = exports.UserRelationsResolver = exports.SessionRelationsResolver = exports.GlobalWorkoutRelationsResolver = exports.DoneWorkoutRelationsResolver = exports.CoachRelationsResolver = exports.AthleteRelationsResolver = exports.AdminRelationsResolver = exports.AccountRelationsResolver = void 0;
 var AccountRelationsResolver_1 = require("./Account/AccountRelationsResolver");
 Object.defineProperty(exports, "AccountRelationsResolver", { enumerable: true, get: function () { return AccountRelationsResolver_1.AccountRelationsResolver; } });
 var AdminRelationsResolver_1 = require("./Admin/AdminRelationsResolver");
@@ -11,6 +11,8 @@ var CoachRelationsResolver_1 = require("./Coach/CoachRelationsResolver");
 Object.defineProperty(exports, "CoachRelationsResolver", { enumerable: true, get: function () { return CoachRelationsResolver_1.CoachRelationsResolver; } });
 var DoneWorkoutRelationsResolver_1 = require("./DoneWorkout/DoneWorkoutRelationsResolver");
 Object.defineProperty(exports, "DoneWorkoutRelationsResolver", { enumerable: true, get: function () { return DoneWorkoutRelationsResolver_1.DoneWorkoutRelationsResolver; } });
+var GlobalWorkoutRelationsResolver_1 = require("./GlobalWorkout/GlobalWorkoutRelationsResolver");
+Object.defineProperty(exports, "GlobalWorkoutRelationsResolver", { enumerable: true, get: function () { return GlobalWorkoutRelationsResolver_1.GlobalWorkoutRelationsResolver; } });
 var SessionRelationsResolver_1 = require("./Session/SessionRelationsResolver");
 Object.defineProperty(exports, "SessionRelationsResolver", { enumerable: true, get: function () { return SessionRelationsResolver_1.SessionRelationsResolver; } });
 var UserRelationsResolver_1 = require("./User/UserRelationsResolver");

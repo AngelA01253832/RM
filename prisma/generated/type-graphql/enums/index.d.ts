@@ -6,6 +6,7 @@ export { DoneWorkoutScalarFieldEnum } from "./DoneWorkoutScalarFieldEnum";
 export { Enum_Gender } from "./Enum_Gender";
 export { Enum_Goal } from "./Enum_Goal";
 export { Enum_Status } from "./Enum_Status";
+export { GlobalWorkoutScalarFieldEnum } from "./GlobalWorkoutScalarFieldEnum";
 export { QueryMode } from "./QueryMode";
 export { SessionScalarFieldEnum } from "./SessionScalarFieldEnum";
 export { SortOrder } from "./SortOrder";

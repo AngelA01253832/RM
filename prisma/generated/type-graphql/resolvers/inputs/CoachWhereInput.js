@@ -6,6 +6,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const EnumEnum_GenderFilter_1 = require("../inputs/EnumEnum_GenderFilter");
 const EnumEnum_StatusFilter_1 = require("../inputs/EnumEnum_StatusFilter");
+const GlobalWorkoutListRelationFilter_1 = require("../inputs/GlobalWorkoutListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const UserRelationFilter_1 = require("../inputs/UserRelationFilter");
 const WorkoutToDoListRelationFilter_1 = require("../inputs/WorkoutToDoListRelationFilter");
@@ -60,6 +61,18 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], CoachWhereInput.prototype, "description", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+], CoachWhereInput.prototype, "scheduler", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+], CoachWhereInput.prototype, "KnowTrainer", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumEnum_GenderFilter_1.EnumEnum_GenderFilter, {
         nullable: true
     }),
@@ -89,6 +102,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", WorkoutToDoListRelationFilter_1.WorkoutToDoListRelationFilter)
 ], CoachWhereInput.prototype, "WorkoutToDo", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => GlobalWorkoutListRelationFilter_1.GlobalWorkoutListRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", GlobalWorkoutListRelationFilter_1.GlobalWorkoutListRelationFilter)
+], CoachWhereInput.prototype, "GlobalWorkout", void 0);
 CoachWhereInput = CoachWhereInput_1 = tslib_1.__decorate([
     TypeGraphQL.InputType("CoachWhereInput", {
         isAbstract: true

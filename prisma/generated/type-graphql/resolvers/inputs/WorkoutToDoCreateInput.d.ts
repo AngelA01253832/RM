@@ -5,5 +5,7 @@ export declare class WorkoutToDoCreateInput {
     coach: CoachCreateNestedOneWithoutWorkoutToDoInput;
     athlete: AthleteCreateNestedOneWithoutWorkoutstToDoInput;
     date: Date;
+    indications: string;
     goal: "Tiempo" | "Calorias" | "Distancia";
+    goalvalue: number;
 }

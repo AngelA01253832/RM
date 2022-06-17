@@ -4,6 +4,8 @@ export declare class CoachCountAggregate {
     lastname: number;
     schoolId: number;
     description: number;
+    scheduler: number;
+    KnowTrainer: number;
     gender: number;
     status: number;
     userId: number;

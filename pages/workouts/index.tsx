@@ -21,12 +21,19 @@ export default function Workout(){
         <Grid container spacing={2} style={{
             marginTop:'1.5vh'
         }}>
-            <Grid item xs={6}>
+            <Grid item xs={3}>
+                <WorkoutCard/>
+            </Grid>
+            <Grid item xs={3}>
+                <WorkoutCard/>
+            </Grid>
+            <Grid item xs={3}>
+                <WorkoutCard/>
+            </Grid>
+            <Grid item xs={3}>
                 <WorkoutCard/>
             </Grid>
         </Grid>
-
-        
       </Box>
     </UserLayout>  )
 }

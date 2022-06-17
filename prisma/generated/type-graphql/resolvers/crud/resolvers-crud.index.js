@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.WorkoutToDoCrudResolver = exports.WeightCrudResolver = exports.VerificationTokenCrudResolver = exports.UserCrudResolver = exports.SessionCrudResolver = exports.DoneWorkoutCrudResolver = exports.CoachCrudResolver = exports.AthleteCrudResolver = exports.AdminCrudResolver = exports.AccountCrudResolver = void 0;
+exports.WorkoutToDoCrudResolver = exports.WeightCrudResolver = exports.VerificationTokenCrudResolver = exports.UserCrudResolver = exports.SessionCrudResolver = exports.GlobalWorkoutCrudResolver = exports.DoneWorkoutCrudResolver = exports.CoachCrudResolver = exports.AthleteCrudResolver = exports.AdminCrudResolver = exports.AccountCrudResolver = void 0;
 var AccountCrudResolver_1 = require("./Account/AccountCrudResolver");
 Object.defineProperty(exports, "AccountCrudResolver", { enumerable: true, get: function () { return AccountCrudResolver_1.AccountCrudResolver; } });
 var AdminCrudResolver_1 = require("./Admin/AdminCrudResolver");
@@ -11,6 +11,8 @@ var CoachCrudResolver_1 = require("./Coach/CoachCrudResolver");
 Object.defineProperty(exports, "CoachCrudResolver", { enumerable: true, get: function () { return CoachCrudResolver_1.CoachCrudResolver; } });
 var DoneWorkoutCrudResolver_1 = require("./DoneWorkout/DoneWorkoutCrudResolver");
 Object.defineProperty(exports, "DoneWorkoutCrudResolver", { enumerable: true, get: function () { return DoneWorkoutCrudResolver_1.DoneWorkoutCrudResolver; } });
+var GlobalWorkoutCrudResolver_1 = require("./GlobalWorkout/GlobalWorkoutCrudResolver");
+Object.defineProperty(exports, "GlobalWorkoutCrudResolver", { enumerable: true, get: function () { return GlobalWorkoutCrudResolver_1.GlobalWorkoutCrudResolver; } });
 var SessionCrudResolver_1 = require("./Session/SessionCrudResolver");
 Object.defineProperty(exports, "SessionCrudResolver", { enumerable: true, get: function () { return SessionCrudResolver_1.SessionCrudResolver; } });
 var UserCrudResolver_1 = require("./User/UserCrudResolver");

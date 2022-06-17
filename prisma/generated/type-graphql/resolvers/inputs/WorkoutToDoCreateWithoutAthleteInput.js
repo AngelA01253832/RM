@@ -26,11 +26,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Date)
 ], WorkoutToDoCreateWithoutAthleteInput.prototype, "date", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], WorkoutToDoCreateWithoutAthleteInput.prototype, "indications", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Enum_Goal_1.Enum_Goal, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)
 ], WorkoutToDoCreateWithoutAthleteInput.prototype, "goal", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Number)
+], WorkoutToDoCreateWithoutAthleteInput.prototype, "goalvalue", void 0);
 WorkoutToDoCreateWithoutAthleteInput = tslib_1.__decorate([
     TypeGraphQL.InputType("WorkoutToDoCreateWithoutAthleteInput", {
         isAbstract: true

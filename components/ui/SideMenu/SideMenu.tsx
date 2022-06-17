@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Link,Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton, Avatar, Badge } from "@mui/material";
+import { Link,Drawer, Box, List, Typography, Divider, AppBar, Toolbar, IconButton, Avatar, Badge, Button } from "@mui/material";
 import NextLink from 'next/link';
+import {signOut} from "next-auth/react";
 
 
 //Icons
@@ -14,9 +15,14 @@ const date = Date.now();
 const toDay = new Date(date)
 
 const drawerWidth : number = 240;
+type Role = 'Atleta' | 'Deportista' | 'Entrenador';
 
 interface Props {
   window?: () => Window;
+  onClick: any,
+  userName: string,
+  profileImg: string,
+  userRole: Role
 }
 
 export function SideMenu(props: Props) {
@@ -42,15 +48,15 @@ export function SideMenu(props: Props) {
             <List>
               <NextLink href="/settings">
                 <Link>
-                    <SideMenuItem text={'Configuración'} icon={<SettingsIcon />} />                
+                    <Button onClick={props.onClick}><SideMenuItem text={'Log Out'} icon={<SettingsIcon />} /></Button>                
                 </Link>
               </NextLink>
-                <SideMenuItem text={'Ayuda'} icon={<HelpIcon />} />
+              <Button><SideMenuItem text={'Ayuda'} icon={<HelpIcon />} /></Button>
             </List>
           </div>
           <Divider />
           <List>
-              <ProfileSection/>
+              <ProfileSection userName={props.userName} profileImg={props.profileImg} userRole={props.userRole}/>
           </List>
     </div>
   );

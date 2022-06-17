@@ -38,6 +38,18 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], CoachMinAggregate.prototype, "description", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], CoachMinAggregate.prototype, "scheduler", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], CoachMinAggregate.prototype, "KnowTrainer", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Enum_Gender_1.Enum_Gender, {
         nullable: true
     }),

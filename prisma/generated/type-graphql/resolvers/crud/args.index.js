@@ -6,6 +6,7 @@ tslib_1.__exportStar(require("./Admin/args"), exports);
 tslib_1.__exportStar(require("./Athlete/args"), exports);
 tslib_1.__exportStar(require("./Coach/args"), exports);
 tslib_1.__exportStar(require("./DoneWorkout/args"), exports);
+tslib_1.__exportStar(require("./GlobalWorkout/args"), exports);
 tslib_1.__exportStar(require("./Session/args"), exports);
 tslib_1.__exportStar(require("./User/args"), exports);
 tslib_1.__exportStar(require("./VerificationToken/args"), exports);

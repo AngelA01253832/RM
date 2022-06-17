@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateGlobalWorkoutArgs } from "./args/AggregateGlobalWorkoutArgs";
+import { CreateGlobalWorkoutArgs } from "./args/CreateGlobalWorkoutArgs";
+import { CreateManyGlobalWorkoutArgs } from "./args/CreateManyGlobalWorkoutArgs";
+import { DeleteGlobalWorkoutArgs } from "./args/DeleteGlobalWorkoutArgs";
+import { DeleteManyGlobalWorkoutArgs } from "./args/DeleteManyGlobalWorkoutArgs";
+import { FindFirstGlobalWorkoutArgs } from "./args/FindFirstGlobalWorkoutArgs";
+import { FindManyGlobalWorkoutArgs } from "./args/FindManyGlobalWorkoutArgs";
+import { FindUniqueGlobalWorkoutArgs } from "./args/FindUniqueGlobalWorkoutArgs";
+import { GroupByGlobalWorkoutArgs } from "./args/GroupByGlobalWorkoutArgs";
+import { UpdateGlobalWorkoutArgs } from "./args/UpdateGlobalWorkoutArgs";
+import { UpdateManyGlobalWorkoutArgs } from "./args/UpdateManyGlobalWorkoutArgs";
+import { UpsertGlobalWorkoutArgs } from "./args/UpsertGlobalWorkoutArgs";
+import { GlobalWorkout } from "../../../models/GlobalWorkout";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateGlobalWorkout } from "../../outputs/AggregateGlobalWorkout";
+import { GlobalWorkoutGroupBy } from "../../outputs/GlobalWorkoutGroupBy";
+export declare class GlobalWorkoutCrudResolver {
+    globalWorkout(ctx: any, info: GraphQLResolveInfo, args: FindUniqueGlobalWorkoutArgs): Promise<GlobalWorkout | null>;
+    findFirstGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: FindFirstGlobalWorkoutArgs): Promise<GlobalWorkout | null>;
+    globalWorkouts(ctx: any, info: GraphQLResolveInfo, args: FindManyGlobalWorkoutArgs): Promise<GlobalWorkout[]>;
+    createGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: CreateGlobalWorkoutArgs): Promise<GlobalWorkout>;
+    createManyGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: CreateManyGlobalWorkoutArgs): Promise<AffectedRowsOutput>;
+    deleteGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: DeleteGlobalWorkoutArgs): Promise<GlobalWorkout | null>;
+    updateGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: UpdateGlobalWorkoutArgs): Promise<GlobalWorkout | null>;
+    deleteManyGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: DeleteManyGlobalWorkoutArgs): Promise<AffectedRowsOutput>;
+    updateManyGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: UpdateManyGlobalWorkoutArgs): Promise<AffectedRowsOutput>;
+    upsertGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: UpsertGlobalWorkoutArgs): Promise<GlobalWorkout>;
+    aggregateGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: AggregateGlobalWorkoutArgs): Promise<AggregateGlobalWorkout>;
+    groupByGlobalWorkout(ctx: any, info: GraphQLResolveInfo, args: GroupByGlobalWorkoutArgs): Promise<GlobalWorkoutGroupBy[]>;
+}

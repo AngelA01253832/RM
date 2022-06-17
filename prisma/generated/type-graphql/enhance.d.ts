@@ -15,6 +15,7 @@ declare const crudResolversMap: {
     Weight: typeof crudResolvers.WeightCrudResolver;
     DoneWorkout: typeof crudResolvers.DoneWorkoutCrudResolver;
     WorkoutToDo: typeof crudResolvers.WorkoutToDoCrudResolver;
+    GlobalWorkout: typeof crudResolvers.GlobalWorkoutCrudResolver;
 };
 declare type ResolverModelNames = keyof typeof crudResolversMap;
 declare type ModelResolverActionNames<TModel extends ResolverModelNames> = keyof typeof crudResolversMap[TModel]["prototype"];
@@ -44,6 +45,7 @@ declare const relationResolversMap: {
     Weight: typeof relationResolvers.WeightRelationsResolver;
     DoneWorkout: typeof relationResolvers.DoneWorkoutRelationsResolver;
     WorkoutToDo: typeof relationResolvers.WorkoutToDoRelationsResolver;
+    GlobalWorkout: typeof relationResolvers.GlobalWorkoutRelationsResolver;
 };
 declare type RelationResolverModelNames = keyof typeof relationResolversMap;
 declare type RelationResolverActionNames<TModel extends RelationResolverModelNames> = keyof typeof relationResolversMap[TModel]["prototype"];

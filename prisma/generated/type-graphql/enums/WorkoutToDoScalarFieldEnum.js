@@ -7,7 +7,9 @@ var WorkoutToDoScalarFieldEnum;
 (function (WorkoutToDoScalarFieldEnum) {
     WorkoutToDoScalarFieldEnum["id"] = "id";
     WorkoutToDoScalarFieldEnum["date"] = "date";
+    WorkoutToDoScalarFieldEnum["indications"] = "indications";
     WorkoutToDoScalarFieldEnum["goal"] = "goal";
+    WorkoutToDoScalarFieldEnum["goalvalue"] = "goalvalue";
     WorkoutToDoScalarFieldEnum["coachId"] = "coachId";
     WorkoutToDoScalarFieldEnum["athleteId"] = "athleteId";
 })(WorkoutToDoScalarFieldEnum = exports.WorkoutToDoScalarFieldEnum || (exports.WorkoutToDoScalarFieldEnum = {}));

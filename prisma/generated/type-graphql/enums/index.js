@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.WorkoutToDoScalarFieldEnum = exports.WeightScalarFieldEnum = exports.VerificationTokenScalarFieldEnum = exports.UserScalarFieldEnum = exports.SortOrder = exports.SessionScalarFieldEnum = exports.QueryMode = exports.Enum_Status = exports.Enum_Goal = exports.Enum_Gender = exports.DoneWorkoutScalarFieldEnum = exports.CoachScalarFieldEnum = exports.AthleteScalarFieldEnum = exports.AdminScalarFieldEnum = exports.AccountScalarFieldEnum = void 0;
+exports.WorkoutToDoScalarFieldEnum = exports.WeightScalarFieldEnum = exports.VerificationTokenScalarFieldEnum = exports.UserScalarFieldEnum = exports.SortOrder = exports.SessionScalarFieldEnum = exports.QueryMode = exports.GlobalWorkoutScalarFieldEnum = exports.Enum_Status = exports.Enum_Goal = exports.Enum_Gender = exports.DoneWorkoutScalarFieldEnum = exports.CoachScalarFieldEnum = exports.AthleteScalarFieldEnum = exports.AdminScalarFieldEnum = exports.AccountScalarFieldEnum = void 0;
 var AccountScalarFieldEnum_1 = require("./AccountScalarFieldEnum");
 Object.defineProperty(exports, "AccountScalarFieldEnum", { enumerable: true, get: function () { return AccountScalarFieldEnum_1.AccountScalarFieldEnum; } });
 var AdminScalarFieldEnum_1 = require("./AdminScalarFieldEnum");
@@ -17,6 +17,8 @@ var Enum_Goal_1 = require("./Enum_Goal");
 Object.defineProperty(exports, "Enum_Goal", { enumerable: true, get: function () { return Enum_Goal_1.Enum_Goal; } });
 var Enum_Status_1 = require("./Enum_Status");
 Object.defineProperty(exports, "Enum_Status", { enumerable: true, get: function () { return Enum_Status_1.Enum_Status; } });
+var GlobalWorkoutScalarFieldEnum_1 = require("./GlobalWorkoutScalarFieldEnum");
+Object.defineProperty(exports, "GlobalWorkoutScalarFieldEnum", { enumerable: true, get: function () { return GlobalWorkoutScalarFieldEnum_1.GlobalWorkoutScalarFieldEnum; } });
 var QueryMode_1 = require("./QueryMode");
 Object.defineProperty(exports, "QueryMode", { enumerable: true, get: function () { return QueryMode_1.QueryMode; } });
 var SessionScalarFieldEnum_1 = require("./SessionScalarFieldEnum");
